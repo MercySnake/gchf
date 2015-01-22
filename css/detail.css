@@ -43,13 +43,14 @@
 .pro_info_wrap .pro_type dt{ font-size:14px; color:#626469; font-weight:bold; line-height:24px;}
 .pro_info_wrap .pro_type dd{ font-size:13px; color:#818388; line-height:24px}
 .pro_info_wrap .pro_type dd input{ margin:0 5px 0 0;vertical-align: middle;}
-.pro_info_wrap .pro_other{ width:370px}
+.pro_info_wrap .pro_other{ /*width:370px*/ width:100%;}
 .pro_info_wrap .pro_other .o_tag{ display:inline-block; font-size:13px; color:#fff; background-color:#e4393c; line-height:23px; padding:0 9px; border-radius:3px;}
 .pro_info_wrap .pro_other_con{ margin-left:60px;}
 .pro_info_wrap .pro_other_con span{ display:inline-block; vertical-align:top; font-size:13px; color:#626469; line-height:23px; padding:0 10px 0 0;}
 .pro_info_wrap .pro_love,
 .pro_info_wrap .pro_share{ display:inline-block; line-height:23px; font-size:13px; color:#626469; padding-left:18px; margin-right:20px;}
-.pro_info_wrap .pro_love{ background:url(../images/o_ico.png) no-repeat 0 5px;}
+.pro_info_wrap .bdshare-button-style0-16 .bds_more{ background-image:none; padding-left:0;font-size:13px; color:#626469; margin:4px 0 0 0;}
+.pro_info_wrap .pro_love{ background:url(../images/o_ico.png) no-repeat 0 5px; cursor:pointer;}
 .pro_info_wrap .pro_share{ background:url(../images/o_ico.png) no-repeat 0 -20px;}
 .pro_info_wrap .pro_love i{ color:#da465c;}
 .pro_info_wrap .pro_sum{ width:300px;}
@@ -112,6 +113,7 @@
 .section_d2 .pro_detail_con .p_line{ border-bottom:dotted 1px #cbbca6;}
 .section_d2 .pro_detail_con .p_last{ padding-bottom:0; margin-bottom:0;}
 
+.section_d3 .switch_section{ padding:20px; background-color:#fff; border:solid 1px #e5dcc3; margin-bottom:10px;}
 #comment h2 {font-size: 12px;line-height: 22px;}
 #comment .mc {overflow: hidden;zoom: 1;}
 #comment .rate {float: left;width: 110px;padding: 20px 0 0;text-align: center;}
@@ -193,10 +195,11 @@ background-image: linear-gradient(to bottom,#ED0000 0,#A50000 100%);}
 #comments-list .reply-btn:hover, 
 #comments-list .reply-btn:visited {text-decoration: none;color: #333;}
 
-
-
-
-
+.Ptable {background: #ccc;margin: 10px 0; border-right:solid 1px #ccc; border-top:solid 1px #ccc; color:#666;}
+.Ptable th {background: #EEF7FE;padding:7px 5px;font-size: 14px; border-left:solid 1px #ccc; border-bottom:solid 1px #ccc; font-weight:bold;}
+.Ptable .tdTitle {text-align: right;width: 110px;background: #F5FAFE;}
+.Ptable th.tdTitle {text-align: center;}
+.Ptable td {font-size:12px;padding: 5px;background: #fff; border-left:solid 1px #ccc; border-bottom:solid 1px #ccc;}
 
 
 

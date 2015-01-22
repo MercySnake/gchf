@@ -65,15 +65,17 @@ require(['jquery','slider','times'],function($,slider,times) {
 			}
 		});	
 		
-		//var at = new times();
-		//at.init();
-		
-		
+//		var at = new times();
+//		at.init();
+
+		/* 倒计时 */
 		function gt(){
 			var now = new Date();
 			var later = new Date("2/18/2015 13:00:00");//倒计时基准时间
 			var tim = (later.getTime() - now.getTime());
 			if(tim > 0){
+				$("#sale_status").removeClass("status_end");
+				
 				days = tim / 1000 / 60 / 60 / 24;
 				daysRound = Math.floor(days);//剩余天
 				hours = tim / 1000 / 60 / 60 - (24 * daysRound);
@@ -83,20 +85,44 @@ require(['jquery','slider','times'],function($,slider,times) {
 				seconds = tim / 1000 - (24 * 60 * 60 * daysRound) - (60 * 60 * hoursRound) - (60 * minutesRound);
 				secondsRound = Math.round(seconds);//剩余秒
 				
-				console.log(minutesRound);
+				//console.log(secondsRound);
 				
-				$("#saleDay").text(daysRound)
-				$("#saleHours").text(hoursRound)
-				$("#saleMinutes").text(minutesRound)
+				$("#saleDay").text(daysRound);
+				$("#saleHours").text(hoursRound);
+				$("#saleMinutes").text(minutesRound);
+				//$("#saleSeconds").text(secondsRound);
 				
-				setTimeout("gt()",1000)
+				setTimeout(gt,60000);
 				
 			}else{
-				document.write('活动已经结束！');
+				$("#sale_status").addClass("status_end");
 			};
 		};
-		
 		gt();
+		
+		
+		/* 商品介绍切换 */
+		$("#proIntroTab a").on("click",function(){
+			var index = $(this).parent().index();
+			var cArr = $(this).attr("data-wrap").split("|");
+			
+			$(this).parent().addClass("on").siblings().removeClass("on");
+
+			$("#" + cArr[0]).show();
+			if(cArr[1]){$("#" + cArr[1]).hide();}
+			
+			if(cArr[2]){
+				$("#" + cArr[0] + " .switch_section:eq("+ index +")").show().siblings().hide();
+			}
+		});
+		
+		/* 商品评价切换 */
+		$("#commentWrap").slide({
+			mainCell : "#comments-list",
+			titCell : ".ds_tit dd"
+		})
+		
+		
 		
 		
 	});
