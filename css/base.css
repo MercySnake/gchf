@@ -467,6 +467,7 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 
 .t_horizontal .t_labels{ display:inline-block; width:70px; float:left; line-height:40px; font-size:14px; text-align:right; color:#a2977d;}
 .t_horizontal .t_controls{ margin-left:80px;}
+.t_horizontal .radio{ display:inline-block; height:40px;}
 
 .Validform_checktip{ font-size:14px; color:#999a9d; padding-left:10px;}
 .t_agreement{ font-size:12px; color:#999a9d;}
