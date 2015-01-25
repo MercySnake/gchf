@@ -115,14 +115,50 @@
 .address_section .address_info dd{ font-size:12px; color:#7e7e7c; line-height:22px;}
 .address_section .address_tool { position:absolute; top:40px; right:40px;}
 .address_section .address_tool .uc_edit_m{ margin-right:7px;}
+/*新增收货地址*/
+.address_add_wrap{ margin-top:15px;}
+.address_add_con{ border-top:solid 1px #b2afa5; padding:10px 20px;}
+.address_add_con{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66DCD7CA', endColorstr='#66DCD7CA');background:rgba(220,215,202,0.4);}
+:root .address_add_con{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#00DCD7CA', endColorstr='#00DCD7CA');}/*for IE9*/
+.address_add_con .address_add_tit{ border-bottom:dashed 1px #d9d7d3; line-height:30px;}
+.address_add_con .address_add_tit span{ font-size:12px; color:#8e846e;}
+.address_add_con .address_add_tit ins{ font-size:12px; color:#c3a176; text-decoration:none;}
+.address_form{}
+.address_form .form_control{ margin-top:10px;}
+.address_form .a_controls{ display:inline-block; width:86px; float:left; text-align:right; line-height:24px; font-size:12px; color:#989898;}
+.address_form .a_control_con{ margin-left:90px;}
+.address_form .a_inpt{ background-color:#fff; border:solid 1px #d7d3ca; height:14px; font-size:12px; padding:4px 5px;}
+.address_form .a_select{background-color:#fff; border:solid 1px #d7d3ca; height:22px;}
+.address_form .uc_address{ width:117px; height:28px; background-position:0 -37px;}
+.address_form .Validform_wrong{font-size:12px; color:#bd986e}
 
+/*发表评价*/
+.comment_cons{ padding:25px 0 0 0;}
 
+.comment_section{}
+.comment_section .comment_pro_img{ width:80px; height:60px;}
+.comment_section .comment_con_sec{ margin-left:90px;}
+.comment_con_info{ border-bottom:dashed 1px #ccc;}
+.comment_con_info .info_name {padding:5px 0 0 0;}
+.comment_con_info .info_name a{ font-size:12px; color:#c29f74;}
+.comment_con_info .info_tags{ padding:10px 0 0 0;}
+.comment_con_info .info_tags em{ float:left; font-size:12px; color:#958f88;}
+.comment_con_info .info_tags span{ float:left; display:inline-block; height:16px; line-height:16px; color:#fff; background-color:#e9c495; padding:0 7px; margin-left:6px;}
 
-
-
-
-
-
+.comment_add_wrap{padding:20px 0 0 0;}
+.comment_add_tip{ font-size:12px; color:#958f88; padding:0 0 10px 0;}
+.comment_add_tip span{ color:#c4bdb5}
+.comment_add_form{}
+.comment_add_text{ border:solid 1px #b7b3aa; margin:0 0 22px 0;}
+.comment_add_form .add_form_tit{ height:32px; line-height:32px; padding:0 10px; font-size:12px; color:#958f88}
+.add_form_tit{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#4C958F88', endColorstr='#4C958F88');background:rgba(149,143,136,0.3);}
+:root .add_form_tit{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#00958F88', endColorstr='#00958F88');}/*for IE9*/
+.comment_add_form .add_form_tit span{}
+.comment_add_form .add_form_tit label{}
+.comment_add_form .add_form_text{padding:10px;}
+.comment_add_form .add_form_text textarea{ outline:none; border:0 none; background-color:transparent; width:100%; padding:0; height:90px; font-size:12px; line-height:20px; resize:none;}
+.comment_add_form .add_form_btn{}
+.comment_add_form .add_form_btn .uc_comment_btn{ width:119px; height:36px; background-position:0 -120px;}
 
 
 

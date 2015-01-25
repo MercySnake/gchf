@@ -74,6 +74,44 @@ require(['jquery','slider',"valid"],function($,slider,valid) {
 		  }
 		]);
 		
+		/* 收货地址 */
+		var addressForm = $("#addressForm").Validform({
+			tiptype:3,
+			showAllError:false,
+		});
+		addressForm.addRule([
+		  {
+			ele:"#addName",
+			datatype:"*",
+			nullmsg:"（必填）",
+			errormsg:"输入有误",
+			sucmsg:" "
+		  },
+		  {
+			ele:"#addF1",
+			datatype:"*",
+			nullmsg:"（必填）",
+			errormsg:"输入有误",
+			sucmsg:" "
+		  },
+		  {
+			ele:"#addWhere",
+			datatype:"*",
+			nullmsg:"（必填）",
+			errormsg:"输入有误",
+			sucmsg:" ",
+			recheck:"newPwd"
+		  }
+		  ,
+		  {
+			ele:"#addPhone",
+			datatype:"m",
+			nullmsg:"（必填）",
+			errormsg:"输入有误",
+			sucmsg:" ",
+		  }
+		]);
+		
 		
 		
 		
