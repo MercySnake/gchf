@@ -551,7 +551,15 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 .pro_list_item .item_info span del em{ color:#444;}
 
 
-
+/*积分换购*/
+.recommend_con{ padding:20px 0 0 0;}
+.recommend .recommend_item{ width:660px;}
+.recommend .recommend_item dd{ margin:0 10px 20px 0;}
+.recommend .recommend_item dd:first-child{}
+.recommend .recommend_item .item_info{ text-align:center;}
+.recommend .recommend_item .item_info span{ width:auto; float:none; padding:0 5px;}
+.recommend_tit{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FE0D9CA', endColorstr='#7FE0D9CA');background:rgba(224,217,202,0.5);}
+:root .recommend_tit{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#00E0D9CA', endColorstr='#00E0D9CA');}/*for IE9*/
 
 
 
