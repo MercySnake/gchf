@@ -79,8 +79,8 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 .t_about_a,
 .t_about_b,
 .t_about_c{float:right;}
-.t_about_a{width:390px;}
-.t_about_b{width:175px;}
+.t_about_a{width:370px;}
+.t_about_b{width:195px;}
 .t_about_c{width:160px;}
 .t_about_b ins{text-decoration:none;font-weight:bold;color:#48bab6;padding-right:5px;}
 /* 搜索 */
@@ -162,7 +162,7 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 .cur .nav_self .nav_ico{background-position:-13px -289px;}
 */
 /* slide */
-.slide_con_dl{height:550px;}
+.slide_con_dl{height:550px; overflow:hidden;}
 .slide_con_dl dd{width:1000px;height:550px;}
 .slide_con .prev,
 .slide_con .next{display:inline-block;width:28px;height:46px;overflow:hidden;background:url(../images/direct_ico.png) no-repeat;position:absolute;top:50%;margin-top:-23px;}
