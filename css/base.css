@@ -560,30 +560,4 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 .recommend .recommend_item .item_info span{ width:auto; float:none; padding:0 5px;}
 .recommend_tit{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FE0D9CA', endColorstr='#7FE0D9CA');background:rgba(224,217,202,0.5);}
 :root .recommend_tit{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#00E0D9CA', endColorstr='#00E0D9CA');}/*for IE9*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*购物单详情*/.add_dizhi{ padding:15px 0; font-family:微软雅黑;}.add_dizhi h3{ margin-bottom:8px;font-size:14px; color:#333;}.dizhi-tab{height:26px; line-height:26px;font-size:12px;}.dizhi-tab strong{ color:#d50000;}.dizhi-tab span a{ color:#AE6800; text-decoration:none;}.dizhi-tab span a:hover{ text-decoration:none;}.btn-bg{ width:105px; height:30px; line-height:30px; background:#AE6800; color:#fff; text-align:center; border:none; cursor:pointer;}.w80{ width:80px; text-indent:2px;}
