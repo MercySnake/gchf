@@ -79,9 +79,9 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 .t_about_a,
 .t_about_b,
 .t_about_c{float:right;}
-.t_about_a{width:370px;}
+/*.t_about_a{width:370px;}
 .t_about_b{width:195px;}
-.t_about_c{width:160px;}
+.t_about_c{width:160px;}*/
 .t_about_b ins{text-decoration:none;font-weight:bold;color:#48bab6;padding-right:5px;}
 /* 搜索 */
 .search_wrap{width:435px;height:31px;padding-left:50px;}
@@ -181,10 +181,11 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 :root .show_case_tit{filter:none;}/*for IE9*/
 .show_case_tit span{font-size:19px;}
 .show_case_tit em{font-size:14px;}
-.show_case_tit a{float:right; margin-top:6px; font-size:14px;}
+.show_case_tit a{float:right; margin-top:6px; font-size:12px;}
+.show_case_tit a:hover{ text-decoration:none;}
 /* 名额 */
 .show_info_wrap{width:485px; position:absolute; right:0; bottom:240px;}
-.show_info_wrap p{font-size:16px; color:#626469; font-weight:bold; line-height:18px;}
+.show_info_wrap p{font-size:16px; color:#626469; font-weight:bold; line-height:24px;}
 .list_con_top{width:485px;height:220px;position:absolute;right:0;bottom:1px;}
 /* slide 权威验证 */
 .authority_wrap,
@@ -219,6 +220,7 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 .report_item p{color:#444; line-height:22px;}
 .report_item a{color:#444;}
 .list_wrap{width:445px; margin:0 40px 0 0;}
+.slide_con_wrap{ height:152px; overflow:hidden;}
 .opacity_l{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#19626469', endColorstr='#19626469');background:rgba(98,100,105,0.1); margin-right:1px;}
 :root .opacity_l{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#00626469', endColorstr='#00626469');}/*for IE9*/
 :root .opacity_l{filter:none;}/*for IE9*/
@@ -228,13 +230,13 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 .weekly_wrap{width:222px;height:132px; padding-top:20px;}
 .weekly_slide_con{padding:0 0 10px 50px; cursor:pointer;}
 .weekly_b_con{width:222px;height:152px;}
-.people_wrap{width:112px;height:107px;padding:45px 55px 0;}
+.people_wrap{width:160px;height:107px;margin:45px 31px 0;}
 .people_wrap p{color:#626469;text-align:center;}
 .people_wrap .line{display:block;height:0;margin:15px 0;border-bottom:solid 1px #fff;}
 /* 一期周刊 */
 .weekly_point{width:8px;position:absolute;top:25px;left:25px;}
 .weekly_point li{display:block;width:8px;height:8px;margin:5px 0;text-indent:-9999px;background:url(../images/ico_bg.png) no-repeat -75px -92px;}
-.slide_con_a{ height:152px; overflow:hidden;}
+.slide_con_a{ /*height:152px;*/ overflow:hidden;}
 /* 典型案例 */
 .case_container{padding:30px 0 0 0;}
 .case_wrap{width:420px; margin:0 0 0 40px;}
@@ -287,8 +289,8 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 .footer_wrap{padding:35px 50px;}
 .customer_wrap{width:322px;}
 .costomer_con{color:#55575b; margin-bottom:10px; line-height:20px;}
-.costomer_con dt{font-size:14px;}
-.costomer_con dd{font-size:12px;}
+.costomer_con dt{font-size:14px; font-weight:bold;}
+.costomer_con dd{font-size:12px; font-weight:bold;}
 .about_wrap{}
 .about_con{float:left;margin:0 30px 0 0;position:relative;padding-top:14px;}
 .about_con .ico_point_l{position:absolute;top:0;right:5px;}
@@ -468,6 +470,9 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 .t_horizontal .t_labels{ display:inline-block; width:70px; float:left; line-height:40px; font-size:14px; text-align:right; color:#a2977d;}
 .t_horizontal .t_controls{ margin-left:80px;}
 .t_horizontal .radio{ display:inline-block; height:40px;}
+.t_horizontal a,
+.t_horizontal a:hover{ color:#999a9d; text-decoration:none;}
+
 
 .Validform_checktip{ font-size:14px; color:#999a9d; padding-left:10px;}
 .t_agreement{ font-size:12px; color:#999a9d;}
@@ -561,3 +566,9 @@ body{background:url(../images/body_bg.jpg) repeat #fff;}
 .recommend_tit{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7FE0D9CA', endColorstr='#7FE0D9CA');background:rgba(224,217,202,0.5);}
 :root .recommend_tit{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#00E0D9CA', endColorstr='#00E0D9CA');}/*for IE9*/
 /*购物单详情*/.add_dizhi{ padding:15px 0; font-family:微软雅黑;}.add_dizhi h3{ margin-bottom:8px;font-size:14px; color:#333;}.dizhi-tab{height:26px; line-height:26px;font-size:12px;}.dizhi-tab strong{ color:#d50000;}.dizhi-tab span a{ color:#AE6800; text-decoration:none;}.dizhi-tab span a:hover{ text-decoration:none;}.btn-bg{ width:105px; height:30px; line-height:30px; background:#AE6800; color:#fff; text-align:center; border:none; cursor:pointer;}.w80{ width:80px; text-indent:2px;}
+/*tang mingyuan*/
+.about_con dd a:hover{color:#333;text-decoration:none;}
+.sr_con p{ line-height:21px;}
+.sr_con_t a{ color:#333; text-decoration:none;}
+.show_case_tit span,.show_case_tit em{ color:#fafafa;}
+.sr_con p,.sr_con div{ line-height:21px;}

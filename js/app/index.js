@@ -46,7 +46,8 @@ require(['jquery','slider'],function($,slider) {
 			mainCell:".slide_tab_con",
 			titCell:".slide_tab_handler li",
 			autoPlay:false,
-			vis:1
+			vis:1,
+			trigger:"click"
 		});
 		
 		/* 典型案例 */
@@ -56,6 +57,24 @@ require(['jquery','slider'],function($,slider) {
 		$("#hover_wrap .case_con").on("mouseleave",function(){
 			$(this).find(".case_text").hide();
 		});
+		
+		/* 关于我们 显示二维码 */
+		$(".show-wx-code").on("mouseenter",function(){
+			var top = $(this).parent().offset().top + $(this).parent().height();
+			var left = $(this).parent().offset().left;
+			var url = $(this).attr("data-url");
+			if($("#show-wx-code").size() > 0){
+				$("#show-wx-code").show();
+				$("#show-wx-code").css({"top":top,"left":left});
+			}else{
+				var str = '<div id="show-wx-code" style="width:100px; height:100px; background-color:#fff; position:absolute; z-index:99;"><img src='+url+' width="100" /></div>';
+				$("body").append(str);
+				$("#show-wx-code").css({"top":top,"left":left});
+			}
+		});
+		$(".show-wx-code").on("mouseleave",function(){
+			$("#show-wx-code").hide();
+		})
 		
 		
 	});
